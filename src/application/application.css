@@ -1,0 +1,156 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/* 🔵 Generale */
+.root {
+    -fx-background-color: #0d1b2a; /* Colore primario */
+}
+
+/* 🔹 Titolo e testo */
+.label {
+    -fx-text-fill: #00c2cb; /* Testo in ciano */
+    -fx-font-size: 14px;
+}
+
+/* 🔲 Campi di input */
+.text-field, .password-field {
+    -fx-background-color: #1b263b; /* Colore secondario */
+    -fx-text-fill: #00c2cb;
+    -fx-prompt-text-fill: #00c2cb;
+    -fx-border-color: #00c2cb;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px; /* Riduce l'altezza */
+    -fx-pref-width: 300px; /* ✅ Imposta larghezza massima */
+    -fx-alignment: center; /* Centra il testo */
+}
+
+/* 🔘 Pulsanti */
+.button {
+    -fx-background-color: #1b263b;
+    -fx-text-fill: #00c2cb;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #00c2cb;
+}
+
+/* 🎯 Effetto hover sui pulsanti */
+.button:hover {
+    -fx-background-color: #00c2cb;
+    -fx-text-fill: #1b263b;
+}
+
+/* 👁️ Pulsanti "mostra password" */
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #00c2cb;
+    -fx-font-size: 12px;
+}
+
+.toggle-button:hover {
+    -fx-text-fill: white;
+}
+
+
+/* MAIN SCREEN */
+.text-field {
+    -fx-background-color: #1b263b;
+    -fx-text-fill: #00c2cb;
+    -fx-prompt-text-fill: #00c2cb;
+    -fx-border-color: #00c2cb;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-pref-width: 200px; /* ✅ Riduce la larghezza della barra di ricerca */
+}
+
+/* Aggiungi questa regola per ridurre SOLO la search bar */
+#searchField {
+    -fx-pref-width: 50px; /* ✅ Cambia la larghezza della search bar */
+    -fx-padding: 5px; /* ✅ Aggiunge margine laterale */
+    -fx-max-width: 500px; /* ✅ Evita che sia troppo larga */
+}
+
+
+/* 📂 Stile della ListView con margine laterale */
+.list-view {
+    -fx-background-color: #1b263b;
+    -fx-border-color: #00c2cb;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px; /* ✅ Aggiunge margine laterale */
+    -fx-max-width: 650px; /* ✅ Evita che sia troppo larga */
+}
+
+/* 🎯 Stile delle celle della ListView */
+.list-cell {
+    -fx-background-color: #1b263b;
+    -fx-text-fill: #00c2cb;
+    -fx-padding: 10px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+}
+
+/* Hover sulle celle */
+.list-cell:hover {
+    -fx-background-color: #00c2cb; /* Cambia sfondo */
+    -fx-text-fill: #1b263b; /* Cambia colore del testo */
+    -fx-border-color: #1b263b; /* Cambia bordo */
+}
+
+.list-cell:hover .label {
+    -fx-text-fill: #1b263b;
+}
+
+/*.list-cell:hover .text-field {
+    -fx-background-color: #00c2cb;
+    -fx-text-fill: #1b263b;
+    -fx-border-color: #1b263b;
+}*/
+
+/* Quando una cella è selezionata */
+/*.list-cell:selected {
+    -fx-background-color: #00c2cb;
+    -fx-text-fill: #1b263b;
+    -fx-font-weight: bold;
+}*/
+
+/*.list-cell:selected #userLabel {
+	-fx-text-fill: #1b263b;
+}
+
+.list-cell:selected #serviceLabel{
+	-fx-text-fill: #1b263b;
+}*/
+
+.list-cell:hover .button {
+    -fx-background-color: #1b263b;
+    -fx-text-fill: #00c2cb;
+    -fx-border-color: #1b263b;
+}
+
+.list-cell:hover .password-field {
+    -fx-background-color: #00c2cb;
+    -fx-text-fill: #1b263b;
+    -fx-border-color: #1b263b;
+}
+
+#userLabel {
+    -fx-text-fill: #00c2cb;
+    -fx-font-size: 12px;
+}
+
+/* Quando il mouse passa sulla cella, cambia anche il colore della userLabel */
+.list-cell:hover #userLabel {
+    -fx-text-fill: #1b263b; /* Cambia colore quando si passa sopra */
+}
+
+/* 🔹 Stile della Barra di Scorrimento */
+.scroll-bar {
+    -fx-background-color: #1b263b;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #00c2cb;
+}
+
+#nameField, #userField {
+    -fx-pref-width: 300px; /* Imposta la larghezza dei TextField */
+}
